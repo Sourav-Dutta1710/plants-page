@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+.body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+  font-size: 4rem !important;
+}
+
+h2,.differentText{
+  color: #09270D !important;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.commonText {
+  color: #666565;
+}
+
+.headingText {
+  color: #3E8847;
+}
+
+.commonColour {
+  background-color: #09270D !important;
+}
+
+.item {
+  transition-duration: 2s;
+}
+
+.item:hover {
+  box-shadow: 0px 8.78079px 11.7077px -2.92693px rgba(17, 24, 39, 0.1),
+    0px 2.92693px 4.39039px -1.46346px rgba(17, 24, 39, 0.05);
+    transform: scale(1.1, 1.1);
+}
+
+.chooseItem {
+  transition-duration: 2s;
+}
+
+.chooseItem:hover {
+  .chooseText{
+    color:white !important;
+  }
+  box-shadow: 5px 25px 37px rgba(2, 22, 5, 0.06);
+  transform: scale(1.1, 1.1);
+  background-color: #3E8847;
+  color:white;
+}
+
+a:hover {
+  border-bottom: 2px solid #3E8847;
+}
+
+
+i:hover {
+  color: #6f77f1;
+  cursor: pointer;
+}
+
+.clientsText{
+  background-color: #3E8847;
+  color: white;
+}
+
+.clientsArrowLeft:hover,.clientsArrowRight:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 1439px) {
+
+  .hiddenItem{
+     display:none;
+  }
+
+  .clientsItem{
+    width:10rem;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .hero{
+  position:relative;
+  margin-bottom: 50rem;
+  }
+
+  .heroItemLeft{
+  position:absolute;
+  z-index: 3;
+  }
+
+  .heroItemCenter{
+  position:absolute;
+  left: 15rem;
+  top:3.5rem;
+  z-index: 2;
+  }
+
+  .heroItemRight{
+  position:absolute;
+  left: 67rem;
+  z-index: 1;
+  }
+
+  .journey{
+    position:relative;
+    width: 38rem;
+  }
+  
+ .journeyTopItem{
+    position:absolute;
+    right:0rem;
+  }
+
+  .journeyBottomItem{
+    margin-top: 30rem;
+  }
+  
+  .ask{
+    position:relative;
+  }
+  
+ .askItem{
+    position:absolute;
+    top:4rem;
+    right:0rem;
+    background-color: white;
+    box-shadow: 0px 8.78079px 11.7077px -2.92693px rgba(17, 24, 39, 0.1),
+    0px 2.92693px 4.39039px -1.46346px rgba(17, 24, 39, 0.05);
+    width:53rem;
+  }
+
+  .clients{
+    position:relative;
+  }
+  
+ .clientsItem{
+    position:absolute;
+    left:17rem;
+    top:10.5rem;
+  }
+
+  .clientsPara{
+    width:38rem;
+  }
+
+  .careItem{
+    width:47rem;
+  }
+  
+  .nav{
+    position:relative;
+  }
+  
+ .navItem{
+    position:absolute;
+    top:0.1rem;
+    left:10rem;
+  }
+
+  .form-control{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px;
+    width:46rem !important;
+  }
+
+  .clientsArrowRight{
+    position: absolute;
+    top:13rem;
+    right:13rem;
+  }
+}
