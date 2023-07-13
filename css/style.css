@@ -74,6 +74,19 @@ i:hover {
   cursor: pointer;
 }
 
+.collectionItem{
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade{
+  0% {transform: scale(1, 1);opacity: 0%;}
+  25% {transform: scale(0.8, 0.8);opacity: 25%;};
+  50% {transform: scale(0.5, 0.5);opacity: 50%;};
+  75% {transform: scale(0.8, 0.8);opacity: 75%;};
+  100% {transform: scale(1, 1);opacity: 100%;};
+}
+
 @media (max-width: 425px) {
 
   h1 {
@@ -106,7 +119,7 @@ i:hover {
 
   .heroItemCenter{
   position:absolute;
-  left: 15rem;
+  left: 22rem;
   top:3.5rem;
   z-index: 2;
   }
@@ -183,7 +196,29 @@ i:hover {
 
   .clientsArrowRight{
     position: absolute;
-    top:13rem;
-    right:13rem;
+    top:13.5rem;
+    right:11rem;
   }
+
+  .heroCenterItem{
+    position:absolute;
+    left: 22rem;
+    top:3.5rem;
+    z-index: 2;
+    width: 42rem !important;
+    height: 32rem !important;
+    }
+
+  .heroRightItem{
+      position:absolute;
+      left: 60rem;
+      z-index: 1;
+      width: 26rem !important;
+      height: 40rem !important;
+      }
+
+  .heroButtons{
+    position: absolute;
+  }
+
 }
