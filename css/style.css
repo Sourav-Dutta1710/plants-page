@@ -47,7 +47,7 @@ h2,
 }
 
 .choose-item:hover {
-  .chooseText {
+  .choose-text {
     color: white !important;
   }
 
