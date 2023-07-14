@@ -97,7 +97,7 @@ i:hover {
 @media (max-width: 1439px) {
 
   .hiddenItem{
-     display:none;
+     display:none !important;
   }
 
   .clientsItem{
@@ -219,6 +219,8 @@ i:hover {
 
   .heroButtons{
     position: absolute;
+    top:40rem;
+    left:30rem;
   }
 
 }

@@ -82,17 +82,19 @@
           id="heroRight" />
         <img class="img-fluid heroItemCenter hiddenItem" src="./images/plant.png" alt="plant" id="heroCenter" />
       </div>
-    </div>
+      <div class="heroButtons d-flex">
+        <img class="btn btn-white hiddenItem" onclick="showPlants()" src="./images/arrow-left.png" alt="symbol" />
+        <span class="headingText commonText h-25 fs-4 mt-4 pe-5 hiddenItem" id="sliderLeft" onclick="showPlants()">1</span>
+        <span class="sliderPositionLeft"></span>
+        <span class="commonText h-25 fs-4 mt-4 hiddenItem" id="sliderRight" onclick="showPlants()" >2</span>
+        <img class="btn btn-white hiddenItem" onclick="showPlants()" src="./images/arrow-right.png" alt="symbol" />
+      </div>
+    </div> 
   </section>
   <!-- Hero Section End -->
 
   <!-- Collection Start -->
   <section name="collection" class="container">
-    <div class="heroButtons d-flex ms-5 ps-5">
-        <button class="btn btn-white text-black rounded-circle border" id="slideLeft" onclick="showPlants()">
-        < </button>
-          <button class="btn btn-white text-black rounded-circle border" id="slideRight" onclick="showPlants()">></button>
-        </div>
     <h2 class="text-center">Plant collection</h2>
     <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center flex-wrap">
       <div class="item py-5 my-2 px-4 fw-semibold fs-4" id="collectionItemLeft">
@@ -108,9 +110,9 @@
         String of pearls
       </div>
       <div class="d-flex flex-column">
-        <button class="btn btn-white text-black rounded-circle border my-2" onclick="slide(1,0)">
-          << /button>
-            <button class="btn btn-white text-black rounded-circle border" onclick="slide(0,0)">></button>
+        <button class="btn btn-white text-black rounded-circle border my-2 fs-5" onclick="slide(1,0)">
+          <  </button>
+            <button class="btn btn-white text-black rounded-circle border fs-5" onclick="slide(0,0)">></button>
       </div>
     </div>
   </section>

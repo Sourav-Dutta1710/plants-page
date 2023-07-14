@@ -61,6 +61,8 @@ function showPlants(){
     document.getElementById("heroCenter").classList.toggle("heroRightItem");
     document.getElementById("heroRight").classList.add("collectionItem");
     document.getElementById("heroCenter").classList.add("collectionItem");
+    document.getElementById("sliderLeft").classList.toggle("headingText");
+    document.getElementById("sliderRight").classList.toggle("headingText");
     setTimeout(addAnimation,2000);
 }
 
