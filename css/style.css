@@ -8,7 +8,7 @@
 }
 
 h1 {
-  font-size: 4rem !important;
+  font-size: 3rem !important;
 }
 
 h2,
@@ -82,6 +82,10 @@ i:hover {
   animation-duration: 2s;
 }
 
+.hidden-item{
+  display: none!important;
+}
+
 @keyframes fade {
   0% {
     transform: scale(1, 1);
@@ -89,21 +93,21 @@ i:hover {
   }
 
   25% {
-    transform: scale(0.8, 0.8);
+    transform: scale(0.7, 0.7);
     opacity: 25%;
   }
 
   ;
 
   50% {
-    transform: scale(0.5, 0.5);
+    transform: scale(0.4, 0.4);
     opacity: 50%;
   }
 
   ;
 
   75% {
-    transform: scale(0.8, 0.8);
+    transform: scale(0.7, 0.7);
     opacity: 75%;
   }
 
@@ -117,25 +121,18 @@ i:hover {
   ;
 }
 
-@media (max-width: 425px) {
-
-  h1 {
-    font-size: 2rem !important;
-  }
-}
-
-@media (max-width: 1439px) {
-
-  .hidden-item {
-    display: none !important;
-  }
-
-  .clients-item {
-    width: 10rem;
+@media(min-width: 425px)
+{
+  h1{
+    font-size: 4rem !important;
   }
 }
 
 @media (min-width: 1440px) {
+
+  .hidden-item{
+    display: block!important;
+  }
 
   .hero {
     position: relative;

@@ -3,30 +3,6 @@ const labels = ["Rubber plants", "String of pearls", "Birds of paradise", "Rubbe
 const clients = ["second-model", "third-model", "model", "second-model", "third-model"];
 let flag = -1;
 
-function slide(slideRight, section) {
-  document.getElementById("collection-item-left").classList.add("collection-item");
-  document.getElementById("collection-item-middle").classList.add("collection-item");
-  document.getElementById("collection-item-right").classList.add("collection-item");
-  document.getElementById("clients-item").classList.add("collection-item");
-
-  if (slideRight && flag === 2)
-    flag = 0;
-  else if (slideRight)
-    flag++;
-  else if (flag === -1)
-    flag = 1;
-  else if (flag === 0)
-    flag = 2;
-  else
-     flag--;
-
-  if (section === 0)
-    showCollection();
-  else
-    showClients()
-
-  setTimeout(addAnimation, 2000);
-}
 
 function showCollection() {
   document.getElementById("collection-item-left").innerHTML = `
@@ -73,4 +49,30 @@ function addAnimation() {
   document.getElementById("hero-right").classList.remove("collection-item");
   document.getElementById("hero-center").classList.remove("collection-item");
 
+}
+
+
+function slide(slideRight, section) {
+  document.getElementById("collection-item-left").classList.add("collection-item");
+  document.getElementById("collection-item-middle").classList.add("collection-item");
+  document.getElementById("collection-item-right").classList.add("collection-item");
+  document.getElementById("clients-item").classList.add("collection-item");
+
+  if (slideRight && flag === 2)
+    flag = 0;
+  else if (slideRight)
+    flag++;
+  else if (flag === -1)
+    flag = 1;
+  else if (flag === 0)
+    flag = 2;
+  else
+    flag--;
+
+  if (section === 0)
+    showCollection();
+  else
+    showClients()
+
+  setTimeout(addAnimation, 2000);
 }
