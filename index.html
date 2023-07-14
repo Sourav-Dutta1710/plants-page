@@ -20,7 +20,7 @@
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg container">
     <div class="container-fluid">
-      <h3 class="headingText pe-5"><span class="commonText">My</span> Plants</h3>
+      <h3 class="heading-text pe-5"><span class="common-text">My</span> Plants</h3>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,8 @@
           </li>
         </ul>
         <div class="nav">
-          <input class="rounded-pill py-1 px-2 hiddenItem" type="text" placeholder="Search Plants">
-          <i class="navItem ms-2 fa-solid fa-magnifying-glass mt-2"></i>
+          <input class="rounded-pill py-1 px-2 hidden-item" type="text" placeholder="Search Plants">
+          <i class="search-icon ms-2 fa-solid fa-magnifying-glass mt-2"></i>
           <i class="fa-solid fa-user-plus p-2 ms-4"></i>
           <i class="fa-solid fa-bag-shopping p-2 ms-4"></i>
         </div>
@@ -57,39 +57,41 @@
   <!-- Hero Section Start -->
   <section name="hero" class="hero container">
     <div class="d-flex flex-column flex-xl-row">
-      <div class="heroItemLeft">
-        <p class="ps-5 fs-4 pt-5 commonText">Love Nature</p>
-        <h1 class="py-5 fw-md-bolder headingText">
+      <div class="hero-item-left">
+        <p class="ps-5 fs-4 pt-5 common-text">Love Nature</p>
+        <h1 class="py-5 fw-md-bolder heading-text">
           Take a new<br>
           friend to your<br>
           home
         </h1>
-        <button type="button" class="btn btn-white  pr-2 px-5 me-4 rounded-pill border border-black fs-4">
+        <button type="button" class="btn btn-white pr-2 px-5 me-4 rounded-pill border border-black fs-4">
           Plant care
         </button>
-        <button type="button" class="btn btn-success commonColour py-2 px-5 rounded-pill commonColour fs-4 my-2">
+        <button type="button" class="btn btn-success common-colour py-2 px-5 rounded-pill fs-4 my-2">
           Buy a plant
         </button>
-        <p class="pt-5 pt-5 headingText fs-3">
+        <p class="pt-5 pt-5 heading-text fs-3">
           <i class="mt-5 pt-5 px-3 fa-brands fa-facebook"></i>
           <i class="px-3 fa-brands fa-instagram"></i>
           <i class="px-3 fa-brands fa-pinterest"></i>
         </p>
       </div>
 
-      <div id="heroItem" class="heroItem">
-        <img class="img-fluid heroItemRight hiddenItem" src="./images/broad-leaves.png" alt="broad-leaves"
-          id="heroRight" />
-        <img class="img-fluid heroItemCenter hiddenItem" src="./images/plant.png" alt="plant" id="heroCenter" />
+      <div id="hero-item" class="hero-item">
+        <img class="img-fluid hero-item-right hidden-item" src="./images/broad-leaves.png" alt="broad leaves"
+          id="hero-right" />
+        <img class="img-fluid hero-item-center hidden-item" src="./images/plant.png" alt="plant" id="hero-center" />
       </div>
-      <div class="heroButtons d-flex">
-        <img class="btn btn-white hiddenItem" onclick="showPlants()" src="./images/arrow-left.png" alt="symbol" />
-        <span class="headingText commonText h-25 fs-4 mt-4 pe-5 hiddenItem" id="sliderLeft" onclick="showPlants()">1</span>
+      <div class="hero-buttons d-flex">
+        <img class="btn btn-white hidden-item" onclick="showPlants()" src="./images/arrow-left.png" alt="left arrow" />
+        <span class="heading-text common-text h-25 fs-4 mt-4 pe-5 hidden-item" id="slider-left"
+          onclick="showPlants()">1</span>
         <span class="sliderPositionLeft"></span>
-        <span class="commonText h-25 fs-4 mt-4 hiddenItem" id="sliderRight" onclick="showPlants()" >2</span>
-        <img class="btn btn-white hiddenItem" onclick="showPlants()" src="./images/arrow-right.png" alt="symbol" />
+        <span class="common-text h-25 fs-4 mt-4 hidden-item" id="slider-right" onclick="showPlants()">2</span>
+        <img class="btn btn-white hidden-item" onclick="showPlants()" src="./images/arrow-right.png"
+          alt="right arrow" />
       </div>
-    </div> 
+    </div>
   </section>
   <!-- Hero Section End -->
 
@@ -97,21 +99,21 @@
   <section name="collection" class="container">
     <h2 class="text-center">Plant collection</h2>
     <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center flex-wrap">
-      <div class="item py-5 my-2 px-4 fw-semibold fs-4" id="collectionItemLeft">
-        <img src="./images/white.png" alt="symbol" class="img-fluid" /><br>
+      <div class="item py-5 my-2 px-4 fw-semibold fs-4" id="collection-item-left">
+        <img src="./images/white.png" alt="white pot" class="img-fluid" /><br>
         Bird of paradise
       </div>
-      <div class="item py-5 my-2 px-4 fw-semibold fs-4" id="collectionItemMiddle">
-        <img src="./images/black.png" alt="symbol" class="img-fluid" /><br>
+      <div class="item py-5 my-2 px-4 fw-semibold fs-4" id="collection-item-middle">
+        <img src="./images/black.png" alt="black pot" class="img-fluid" /><br>
         Rubber plants
       </div>
-      <div class="item py-5 my-2 ps-4 fw-semibold fs-4" id="collectionItemRight">
-        <img src="./images/beaker.png" alt="symbol" class="img-fluid" /><br>
+      <div class="item py-5 my-2 ps-4 fw-semibold fs-4" id="collection-item-right">
+        <img src="./images/beaker.png" alt="beaker" class="img-fluid" /><br>
         String of pearls
       </div>
       <div class="d-flex flex-column">
         <button class="btn btn-white text-black rounded-circle border my-2 fs-5" onclick="slide(1,0)">
-          <  </button>
+          < </button>
             <button class="btn btn-white text-black rounded-circle border fs-5" onclick="slide(0,0)">></button>
       </div>
     </div>
@@ -119,17 +121,17 @@
   <!-- Collection End -->
 
   <!-- Journey Start -->
-  <section name="solution" class="commonBackground d-flex flex-lg-row flex-column align-items-between">
+  <section name="solution" class="common-background d-flex flex-lg-row flex-column align-items-between">
     <div>
       <img class="img-fluid" src="./images/tall-plant.png" alt="tall plant" />
     </div>
-    <div class="px-5 journey commonText">
-      <img class="img-fluid journeyTopItem hiddenItem" src="./images/leaves.png">
-      <h2 class="journeyBottomItem pb-3 ps-5">Our journey</h2>
+    <div class="px-5 journey common-text">
+      <img class="img-fluid journey-top-item hidden-item" src="./images/leaves.png">
+      <h2 class="journey-bottom-item pb-3 ps-5">Our journey</h2>
       It is a long established fact that a reader will be distracted by the readable content of a page when It is a long
       .
       It is a long established fact that a reader will be distracted by the readable content of a is simply.<br>
-      <button type="button" class="btn btn-warning commonColour py-2 px-5 mt-5 ms-md-5 rounded-pill text-white">
+      <button type="button" class="btn btn-warning common-colour py-2 px-5 mt-5 ms-md-5 rounded-pill text-white">
         Get start
       </button>
     </div>
@@ -139,25 +141,26 @@
   <!-- Benefits Start -->
   <section name="benefits" class="container">
     <h2 class="ps-5 ms-4 pt-5">Our advantages</h2>
-    <div class="d-flex flex-xl-row flex-column p-5 gap-5 gap-xl-0 justify-content-center align-items-center commonText">
+    <div
+      class="d-flex flex-xl-row flex-column p-5 gap-5 gap-xl-0 justify-content-center align-items-center common-text">
       <div class="item p-xl-5 d-flex">
-        <img src="./images/can-with-plants.png" alt="symbol" class="pe-4 img-fluid h-100" />
+        <img src="./images/can-with-plants.png" alt="can" class="pe-4 img-fluid h-100" />
         <span>
-          <p class="fs-4 fw-semibold differentText">Easy order</p>
+          <p class="fs-4 fw-semibold different-text">Easy order</p>
           It is a long established fact that a reader will be.
         </span>
       </div>
       <div class="item p-xl-5 d-flex">
-        <img src="./images/watering-can.png" alt="symbol" class="pe-4 img-fluid h-100" />
+        <img src="./images/watering-can.png" alt="watering can" class="pe-4 img-fluid h-100" />
         <span>
-          <p class="fs-4 fw-semibold differentText">Fast delivery</p>
+          <p class="fs-4 fw-semibold different-text">Fast delivery</p>
           It is a long established fact that a reader will be.
         </span>
       </div>
       <div class="item p-xl-5 d-flex">
-        <img src="./images/pot-plants.png" alt="symbol" class="pe-4 img-fluid h-100" />
+        <img src="./images/pot-plants.png" alt="pot" class="pe-4 img-fluid h-100" />
         <span>
-          <p class="fs-4 fw-semibold differentText">Easy order</p>
+          <p class="fs-4 fw-semibold different-text">Easy order</p>
           It is a long established fact that a reader will be.
         </span>
       </div>
@@ -168,9 +171,9 @@
   <!-- Ask Start -->
   <section name="ask" class="ask d-flex flex-column flex-xl-row">
     <div class="align-self-center">
-      <img class="img-fluid" src="./images/plants.png" alt="potrait" />
+      <img class="img-fluid" src="./images/plants.png" alt="plants" />
     </div>
-    <div class="askItem rounded-2 border">
+    <div class="ask-item rounded-2 border">
       <h2 class="pt-5 ps-5 ms-md-5">Ask us anything</h2>
       <form class="mt-5 ms-md-5">
         <input type="text" class="form-control py-2 ms-5 w-75" placeholder="Name">
@@ -179,8 +182,8 @@
         <textarea class="form-control ms-5 mb-3 w-75" rows="3" placeholder="message"></textarea>
         <div class="d-flex flex-column flex-xl-row">
           <button type="submit"
-            class="btn btn-success commonColour rounded-pill px-md-5 py-2 mx-5 h-100 w-25">Send</button>
-          <div class="askIcons fs-3 ms-5 ps-5 headingText">
+            class="btn btn-success common-colour rounded-pill px-md-5 py-2 mx-5 h-100 w-25">Send</button>
+          <div class="ask-icons fs-3 ms-5 ps-5 mb-3 heading-text">
             <i class="pt-5 px-3 fa-brands fa-facebook"></i>
             <i class="px-3 fa-brands fa-instagram"></i>
             <i class="px-3 fa-brands fa-pinterest"></i>
@@ -197,22 +200,22 @@
       Chooseing the right plant
     </h2>
     <div
-      class="d-flex flex-lg-row flex-column py-5 gap-5 gap-xl-0 justify-content-evenly align-items-center commonText">
-      <div class="chooseItem p-xl-5">
-        <img src="./images/mango.png" alt="symbol" />
-        <p class="chooseText fs-3 differentText fs-semibold">Garden plants</p>
+      class="d-flex flex-lg-row flex-column py-5 gap-5 gap-xl-0 justify-content-evenly align-items-center common-text">
+      <div class="choose-item p-xl-5">
+        <img src="./images/mango.png" alt="mango" />
+        <p class="choose-text fs-3 different-text fs-semibold">Garden plants</p>
         It is a long established fact that a<br> reader will be distracted
         by the.
       </div>
-      <div class="chooseItem p-xl-5">
-        <img src="./images/fern-white.png" alt="symbol" />
-        <p class="chooseText fs-3 differentText fs-semibold">Indoor plants</p>
+      <div class="choose-item p-xl-5">
+        <img src="./images/fern-white.png" alt="fern" />
+        <p class="choose-text fs-3 different-text fs-semibold">Indoor plants</p>
         It is a long established fact that a<br> reader will be distracted
         by the.
       </div>
-      <div class="chooseItem p-xl-5">
-        <img src="./images/cactus.png" alt="symbol" />
-        <p class="chooseText fs-3 differentText fs-semibold">Home plants</p>
+      <div class="choose-item p-xl-5">
+        <img src="./images/cactus.png" alt="cactus" />
+        <p class="choose-text fs-3 different-text fs-semibold">Home plants</p>
         It is a long established fact that a<br> reader will be distracted
         by the.
       </div>
@@ -225,30 +228,30 @@
     <h2 class="ps-5 ms-md-5">What clients talk about us</h2>
     <div class="d-flex flex-lg-row flex-column p-5 gap-5 gap-xl-0 justify-content-around align-items-center">
       <div class="p-xl-5 my-xl-5 text-center">
-        <button class="btn btn-transparent" onclick="slide(1,1)"><img class="pt-3 clientsArrowLeft"
-            src="./images/arrow.png" alt="symbol" /></button>
+        <button class="btn btn-transparent" onclick="slide(1,1)"><img class="pt-3 clients-arrow-left"
+            src="./images/arrow.png" alt="arrow" /></button>
       </div>
-      <div class="p-xl-5 m-xl-5 clientsText fs-5 d-flex flex-column align-items-center" id="clientsItem">
-        <p class="clientsPara p-3 ps-xl-5 ms-xl-5">
+      <div class="p-xl-5 m-xl-5 clients-text fs-5 d-flex flex-column align-items-center" id="clients-item">
+        <p class="clients-para p-3 ps-xl-5 ms-xl-5">
           <i class="fs-1 fa-solid fa-quote-left fa-2xl text-white"></i><br>
           It is a long established fact that a reader will be distracted by the readable content of a page when It
           is a long . It is a long .It is a long established fact that a reader will be . It is a long
           established fact that a reader .
           <i class="fs-1 fa-solid fa-quote-right fa-2xl text-white"></i>
         </p>
-        <img class="pt-3 clientsItem" src="./images/model.png" alt="symbol" />
+        <img class="pt-3 clients-item" src="./images/model.png" alt="symbol" />
       </div>
       <div class="p-xl-5 m-xl-5 text-center">
-        <button class="btn btn-transparent" onclick="slide(1,1)"><img class="pt-3 clientsArrowRight"
-            src="./images/arrow.png" alt="symbol" />
+        <button class="btn btn-transparent" onclick="slide(1,1)"><img class="pt-3 clients-arrow-right"
+            src="./images/arrow.png" alt="arrow" />
       </div>
     </div>
   </section>
   <!-- Clients End -->
 
   <!-- Care Start -->
-  <section name="care" class="pb-5 mb-5 commonBackground d-flex flex-lg-row flex-column">
-    <div class="careItem mx-3 px-5 commonText">
+  <section name="care" class="pb-5 mb-5 common-background d-flex flex-lg-row flex-column">
+    <div class="care-item mx-3 px-5 common-text">
       <h2 class="p-4">
         Plant care
       </h2>
@@ -257,7 +260,7 @@
       that a reader will be distracted by the readable content of a is simply.<br>
       a page when It is a long .It is a long established fact that a reader will be distracted by the readable content
       of a is simply.
-      <button type="button" class="btn btn-warning commonColour py-2 px-4 mx-1 my-5 rounded-pill text-white">
+      <button type="button" class="btn btn-warning common-colour py-2 px-4 mx-1 my-5 rounded-pill text-white">
         Read the blog
       </button>
     </div>
@@ -268,7 +271,7 @@
   <!-- Care End -->
 
   <!-- Footer Start -->
-  <footer class="commonColour">
+  <footer class="common-colour">
     <div class="text-white d-flex flex-column flex-lg-row gap-5 justify-content-evenly align-items-center">
       <div>
         <h1 class="fw-normal ps-2">
@@ -277,10 +280,10 @@
         <p class="pb-0 fw-lighter">It is a long established fact that a reader will be<br> distracted by the readable
           content of a page when It is<br> a long .
           It is a long established fact that a reader will be<br> distracted by the.</p>
-        <button class="clientsText mb-5"><i class="fa-brands fa-instagram"></i></button>
-        <button class="clientsText"><i class="fa-brands fa-facebook"></i></button>
-        <button class="clientsText"><i class="fa-brands fa-youtube"></i></button>
-        <button class="clientsText"><i class="fa-brands fa-twitter"></i></button>
+        <button class="clients-text mb-5"><i class="fa-brands fa-instagram"></i></button>
+        <button class="clients-text"><i class="fa-brands fa-facebook"></i></button>
+        <button class="clients-text"><i class="fa-brands fa-youtube"></i></button>
+        <button class="clients-text"><i class="fa-brands fa-twitter"></i></button>
       </div>
       <div>
         <h3 class="fw-normal pb-4">Services</h3>
@@ -314,7 +317,7 @@
       </div>
     </div>
     <hr class="text-white" />
-    <div class="d-flex flex-column flex-lg-row justify-content-lg-between p-4 commonText container">
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between p-4 common-text container">
       Copyright © 2023 nuvosa, All rights reserved.
       <div class="d-lg-flex">
         <a class="nav-link p-2" href="#">Terms of use</a>

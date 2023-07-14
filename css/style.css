@@ -11,7 +11,8 @@ h1 {
   font-size: 4rem !important;
 }
 
-h2,.differentText{
+h2,
+.different-text {
   color: #09270D !important;
 }
 
@@ -19,15 +20,15 @@ h2,.differentText{
   cursor: pointer;
 }
 
-.commonText {
+.common-text {
   color: #666565;
 }
 
-.headingText {
+.heading-text {
   color: #3E8847;
 }
 
-.commonColour {
+.common-colour {
   background-color: #09270D !important;
 }
 
@@ -38,17 +39,18 @@ h2,.differentText{
 .item:hover {
   box-shadow: 0px 8.78079px 11.7077px -2.92693px rgba(17, 24, 39, 0.1),
     0px 2.92693px 4.39039px -1.46346px rgba(17, 24, 39, 0.05);
-    transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
-.chooseItem {
+.choose-item {
   transition-duration: 2s;
 }
 
-.chooseItem:hover {
-  .chooseText{
-    color:white !important;
+.choose-item:hover {
+  .chooseText {
+    color: white !important;
   }
+
   box-shadow: 5px 25px 37px rgba(2, 22, 5, 0.06);
   transform: scale(1.1, 1.1);
   background-color: #3E8847;
@@ -65,26 +67,54 @@ i:hover {
   cursor: pointer;
 }
 
-.clientsText{
+.clients-text {
   background-color: #3E8847;
   color: white;
 }
 
-.clientsArrowLeft:hover,.clientsArrowRight:hover{
+.clients-arrow-left:hover,
+.clients-arrow-right:hover {
   cursor: pointer;
 }
 
-.collectionItem{
+.collection-item {
   animation-name: fade;
   animation-duration: 2s;
 }
 
-@keyframes fade{
-  0% {transform: scale(1, 1);opacity: 0%;}
-  25% {transform: scale(0.8, 0.8);opacity: 25%;};
-  50% {transform: scale(0.5, 0.5);opacity: 50%;};
-  75% {transform: scale(0.8, 0.8);opacity: 75%;};
-  100% {transform: scale(1, 1);opacity: 100%;};
+@keyframes fade {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0%;
+  }
+
+  25% {
+    transform: scale(0.8, 0.8);
+    opacity: 25%;
+  }
+
+  ;
+
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 50%;
+  }
+
+  ;
+
+  75% {
+    transform: scale(0.8, 0.8);
+    opacity: 75%;
+  }
+
+  ;
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 100%;
+  }
+
+  ;
 }
 
 @media (max-width: 425px) {
@@ -96,131 +126,131 @@ i:hover {
 
 @media (max-width: 1439px) {
 
-  .hiddenItem{
-     display:none !important;
+  .hidden-item {
+    display: none !important;
   }
 
-  .clientsItem{
-    width:10rem;
+  .clients-item {
+    width: 10rem;
   }
 }
 
 @media (min-width: 1440px) {
 
-  .hero{
-  position:relative;
-  margin-bottom: 50rem;
+  .hero {
+    position: relative;
+    margin-bottom: 50rem;
   }
 
-  .heroItemLeft{
-  position:absolute;
-  z-index: 3;
+  .hero-item-left {
+    position: absolute;
+    z-index: 3;
   }
 
-  .heroItemCenter{
-  position:absolute;
-  left: 22rem;
-  top:3.5rem;
-  z-index: 2;
+  .hero-item-center {
+    position: absolute;
+    left: 22rem;
+    top: 3.5rem;
+    z-index: 2;
   }
 
-  .heroItemRight{
-  position:absolute;
-  left: 67rem;
-  z-index: 1;
+  .hero-item-right {
+    position: absolute;
+    left: 67rem;
+    z-index: 1;
   }
 
-  .journey{
-    position:relative;
+  .journey {
+    position: relative;
     width: 38rem;
   }
-  
- .journeyTopItem{
-    position:absolute;
-    right:0rem;
+
+  .journey-top-item {
+    position: absolute;
+    right: 0rem;
   }
 
-  .journeyBottomItem{
+  .journey-bottom-item {
     margin-top: 30rem;
   }
-  
-  .ask{
-    position:relative;
+
+  .ask {
+    position: relative;
   }
-  
- .askItem{
-    position:absolute;
-    top:4rem;
-    right:0rem;
+
+  .ask-item {
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
     background-color: white;
     box-shadow: 0px 8.78079px 11.7077px -2.92693px rgba(17, 24, 39, 0.1),
-    0px 2.92693px 4.39039px -1.46346px rgba(17, 24, 39, 0.05);
-    width:53rem;
+      0px 2.92693px 4.39039px -1.46346px rgba(17, 24, 39, 0.05);
+    width: 53rem;
   }
 
-  .clients{
-    position:relative;
-  }
-  
- .clientsItem{
-    position:absolute;
-    left:17rem;
-    top:10.5rem;
+  .clients {
+    position: relative;
   }
 
-  .clientsPara{
-    width:38rem;
+  .clients-item {
+    position: absolute;
+    left: 17rem;
+    top: 10.5rem;
   }
 
-  .careItem{
-    width:47rem;
-  }
-  
-  .nav{
-    position:relative;
-  }
-  
- .navItem{
-    position:absolute;
-    top:0.1rem;
-    left:10rem;
+  .clients-para {
+    width: 38rem;
   }
 
-  .form-control{
+  .care-item {
+    width: 47rem;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 0.1rem;
+    left: 10rem;
+  }
+
+  .form-control {
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
     border-bottom: 1px;
-    width:46rem !important;
+    width: 46rem !important;
   }
 
-  .clientsArrowRight{
+  .clients-arrow-right {
     position: absolute;
-    top:13.5rem;
-    right:11rem;
+    top: 13.5rem;
+    right: 11rem;
   }
 
-  .heroCenterItem{
-    position:absolute;
+  .hero-center-item {
+    position: absolute;
     left: 22rem;
-    top:3.5rem;
+    top: 3.5rem;
     z-index: 2;
     width: 42rem !important;
     height: 32rem !important;
-    }
+  }
 
-  .heroRightItem{
-      position:absolute;
-      left: 60rem;
-      z-index: 1;
-      width: 26rem !important;
-      height: 40rem !important;
-      }
-
-  .heroButtons{
+  .hero-right-item {
     position: absolute;
-    top:40rem;
-    left:30rem;
+    left: 60rem;
+    z-index: 1;
+    width: 26rem !important;
+    height: 40rem !important;
+  }
+
+  .hero-buttons {
+    position: absolute;
+    top: 40rem;
+    left: 30rem;
   }
 
 }
